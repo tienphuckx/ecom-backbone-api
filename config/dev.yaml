@@ -1,0 +1,14 @@
+server:
+  port: 8082
+databases:
+  - user: phuc
+    password: 123456
+    host: localhost
+    dbName: go-ecom-api
+  - user: phuc1
+    password: 123456
+    host: localhost1
+    dbName: go-ecom-api1
+security:
+  jwt:
+    key: FNAOFNEFENEOANOF
