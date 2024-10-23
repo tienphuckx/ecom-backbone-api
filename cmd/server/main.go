@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"github.com/tienphuckx/ecom-backbone-api.git/internal/router"
+)
 
 func main() {
-	fmt.Println("Initializing server...")
-}
+	// Set up routes
+	r := router.SetupRouter()
 
-func StartServer() {
-	fmt.Println("Starting server...")
-}
-
-func StopServer() {
-	fmt.Println("Stopping server...")
+	// Start the server on port 8080
+	r.Run(":8080")
 }
