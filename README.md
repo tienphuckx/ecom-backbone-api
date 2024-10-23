@@ -16,3 +16,6 @@ Ecommerce backbone API - using Go
     - install:
         go get github.com/spf13/viper
     
+# Test
+curl -H "Authorization: valid-token" curl http://localhost:8080/user/email/phuc@gmail.com
+curl http://localhost:8080/user/email/phuc@gmail.com
