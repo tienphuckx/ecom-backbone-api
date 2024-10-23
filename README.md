@@ -19,3 +19,8 @@ Ecommerce backbone API - using Go
 # Test
 curl -H "Authorization: valid-token" curl http://localhost:8080/user/email/phuc@gmail.com
 curl http://localhost:8080/user/email/phuc@gmail.com
+
+# Run Code Coverage
+    - Run tests with coverage:
+        go test -coverprofile=coverage.out
+        go tool cover -html=coverage.out -o coverage.html
