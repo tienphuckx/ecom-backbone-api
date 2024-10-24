@@ -8,12 +8,16 @@ type SysConfig struct {
 	// other configurations...
 }
 
+// RedisConfig represents the configuration settings for Redis
 type RedisConfig struct {
-	Host     string `mapstructure:"host"`
-	Port     int    `mapstructure:"port"`
-	Password string `mapstructure:"password"`
-	DB       int    `mapstructure:"db"`
-	PoolSize int    `mapstructure:"pool_size"`
+	Addr         string `mapstructure:"addr"`           // Redis server address
+	Password     string `mapstructure:"password"`       // Password for Redis
+	DB           int    `mapstructure:"db"`             // Redis DB index
+	PoolSize     int    `mapstructure:"pool_size"`      // Connection pool size
+	MinIdleConns int    `mapstructure:"min_idle_conns"` // Minimum idle connections in the pool
+	DialTimeout  int    `mapstructure:"dial_timeout"`   // Dial timeout in seconds
+	ReadTimeout  int    `mapstructure:"read_timeout"`   // Read timeout in seconds
+	WriteTimeout int    `mapstructure:"write_timeout"`  // Write timeout in seconds
 }
 
 type MySQLConfig struct {

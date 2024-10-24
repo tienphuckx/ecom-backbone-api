@@ -41,3 +41,14 @@ func InitKafka() error {
 	global.Logger.Info("Kafka producer successfully initialized", zap.Strings("brokers", kafkaConfig.Brokers))
 	return nil
 }
+
+func CloseKafka() {
+	if kafkaWriter != nil {
+		err := kafkaWriter.Close()
+		if err != nil {
+			global.Logger.Error("Failed to close Kafka producer", zap.Error(err))
+		} else {
+			global.Logger.Info("Kafka producer closed successfully")
+		}
+	}
+}

@@ -33,7 +33,9 @@ Ecommerce backbone API - using Go
     go get -u github.com/go-sql-driver/mysql
 
 ## 6. Reids
-    go get github.com/go-redis/redis/v8
+    - Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker.
+    - install:
+        go get github.com/go-redis/redis/v8
 
 ## 7. Kafka
     go get github.com/segmentio/kafka-go
@@ -80,3 +82,14 @@ Ecommerce backbone API - using Go
 
 ## Benchmark
     go test -bench=. -benchmem
+    
+## Step Update content of a docker image and restart (redis)
+    docker-compose down --volumes
+    docker system prune -f --volumes
+    mkdir -p ./redis_data
+    docker-compose up -d
+
+    docker network ps
+    docker network inspect docker network inspect nginx-mysql-network
+## Port
+    sudo lsof -i :8080

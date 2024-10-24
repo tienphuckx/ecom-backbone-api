@@ -86,3 +86,13 @@ func MigrateTables() {
 
 	global.Logger.Info("Migration completed successfully!")
 }
+
+func CloseMySql() {
+	if db != nil {
+		if err := db.Close(); err != nil {
+			global.Logger.Error("Failed to close MySQL connection", zap.Error(err))
+		} else {
+			global.Logger.Info("MySQL connection closed successfully")
+		}
+	}
+}

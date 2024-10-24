@@ -20,11 +20,15 @@ log:
   compress: true
 
 redis:
-  host: "localhost"
-  port: 6379
-  password: "123456"
-  db: 0
-  pool_size: 10
+  addr: "127.0.0.1:6379"   # Redis container name in the Docker network
+  password: "123456"  # Password for Redis if you set it in the docker-compose.yml
+  db: 0                   # Default Redis DB
+  pool_size: 10           # Redis connection pool size
+  min_idle_conns: 5       # Minimum idle connections in the pool
+  dial_timeout: 5         # Dial timeout in seconds
+  read_timeout: 3         # Read timeout in seconds
+  write_timeout: 3        # Write timeout in seconds
+
 
 kafka:
   brokers:
