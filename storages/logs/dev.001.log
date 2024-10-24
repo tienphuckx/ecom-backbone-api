@@ -2,3 +2,20 @@
 {"level":"fatal","timestamp":"2024-10-24T12:45:32.537524314+07:00","message":"Failed to initialize Redis","error":"failed to connect to Redis: dial tcp 127.0.0.1:6379: connect: connection refused","stacktrace":"github.com/tienphuckx/ecom-backbone-api.git/internal/initialize.ServerStart\n\t/home/tienphuckx/dev/go/anonystick/ecom-backbone-api/internal/initialize/run.go:29\nmain.main\n\t/home/tienphuckx/dev/go/anonystick/ecom-backbone-api/cmd/server/main.go:6\nruntime.main\n\t/usr/lib/go-1.22/src/runtime/proc.go:271"}
 {"level":"info","timestamp":"2024-10-24T12:46:37.7863309+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
 {"level":"info","timestamp":"2024-10-24T12:46:37.786433336+07:00","message":"Server is starting..."}
+{"level":"info","timestamp":"2024-10-24T13:05:01.009999272+07:00","message":"Shutting down server..."}
+{"level":"info","timestamp":"2024-10-24T13:05:01.010226602+07:00","message":"MySQL connection closed successfully"}
+{"level":"info","timestamp":"2024-10-24T13:05:01.010350913+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T13:05:02.73473385+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
+{"level":"fatal","timestamp":"2024-10-24T13:05:02.80331176+07:00","message":"Failed to initialize Redis","error":"failed to connect to Redis: dial tcp 127.0.0.1:6379: connect: connection refused","stacktrace":"github.com/tienphuckx/ecom-backbone-api.git/internal/initialize.ServerStart\n\t/home/tienphuckx/dev/go/anonystick/ecom-backbone-api/internal/initialize/run.go:29\nmain.main\n\t/home/tienphuckx/dev/go/anonystick/ecom-backbone-api/cmd/server/main.go:6\nruntime.main\n\t/usr/lib/go-1.22/src/runtime/proc.go:271"}
+{"level":"info","timestamp":"2024-10-24T13:06:14.009329372+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T13:06:14.009524814+07:00","message":"Server is starting..."}
+{"level":"info","timestamp":"2024-10-24T13:06:43.005738623+07:00","message":"Shutting down server..."}
+{"level":"info","timestamp":"2024-10-24T13:06:43.005927131+07:00","message":"MySQL connection closed successfully"}
+{"level":"info","timestamp":"2024-10-24T13:06:43.00606723+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T13:06:44.850908554+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T13:06:44.851046971+07:00","message":"Server is starting..."}
+{"level":"info","timestamp":"2024-10-24T13:07:22.818737761+07:00","message":"Shutting down server..."}
+{"level":"info","timestamp":"2024-10-24T13:07:22.818907989+07:00","message":"MySQL connection closed successfully"}
+{"level":"info","timestamp":"2024-10-24T13:07:22.818994525+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T13:07:25.166698633+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T13:07:25.166825161+07:00","message":"Server is starting..."}

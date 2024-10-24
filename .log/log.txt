@@ -1,4 +1,0 @@
-{"level":"info","timestamp":"2024-10-23T16:47:52.40329715+07:00","message":"Dev: Info log","line":1}
-{"level":"error","timestamp":"2024-10-23T16:47:52.403396735+07:00","message":"Dev: Error log","line":2}
-{"level":"INFO","timestamp":"2024-10-23T16:47:52.403+0700","caller":"cli/main.log.go:99","message":"Production: Info log","line":1}
-{"level":"ERROR","timestamp":"2024-10-23T16:47:52.403+0700","caller":"cli/main.log.go:100","message":"Production: Error log","line":2}

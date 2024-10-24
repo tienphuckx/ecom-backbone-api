@@ -24,15 +24,19 @@ func ServerStart() {
 		global.Logger.Fatal("Failed to initialize MySQL", zap.Error(err))
 	}
 
-	//Redis database initialization
-	if err := InitRedis(); err != nil {
-		global.Logger.Fatal("Failed to initialize Redis", zap.Error(err))
-	}
+	/*
 
-	//Kafka producer initialization
-	if err := InitKafka(); err != nil {
-		global.Logger.Fatal("Failed to initialize Kafka", zap.Error(err))
-	}
+		//Redis database initialization
+		if err := InitRedis(); err != nil {
+			global.Logger.Fatal("Failed to initialize Redis", zap.Error(err))
+		}
+
+		//Kafka producer initialization
+		if err := InitKafka(); err != nil {
+			global.Logger.Fatal("Failed to initialize Kafka", zap.Error(err))
+		}
+
+	*/
 
 	// Logging server start
 	global.Logger.Info("Server is starting...")
