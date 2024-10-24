@@ -1,14 +1,45 @@
 server:
   port: 8082
-databases:
-  - user: phuc
-    password: 123456
-    host: localhost
-    dbName: go-ecom-api
-  - user: phuc1
-    password: 123456
-    host: localhost1
-    dbName: go-ecom-api1
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "123456"
+  db_name: "boxfetch"
+  max_open_conns: 100
+  max_idle_conns: 10
+  conn_max_lifetime: 14400
+
+
+log:
+  log_level: debug # Change this to one of the valid levels if needed
+  file_log_name: "./storages/logs/dev.001.log"
+  max_size: 500
+  max_backups: 3
+  max_age: 28
+  compress: true
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: "123456"
+  db: 0
+  pool_size: 10
+
+kafka:
+  brokers:
+    - "localhost:9092"
+  client_id: "your-client-id"
+  topic: "your-topic"
+  acks: "all"
+
+
 security:
   jwt:
-    key: FNAOFNEFENEOANOF
+    key: "super-secret-key"
+
+databases:
+  - user: "admin"
+    host: "localhost"
+    db_name: "testdb"
