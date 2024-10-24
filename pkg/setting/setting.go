@@ -1,11 +1,16 @@
 package setting
 
 type SysConfig struct {
-	LogConfig   LogConfig   `mapstructure:"log"`
-	MySQLConfig MySQLConfig `mapstructure:"mysql"`
-	RedisConfig RedisConfig `mapstructure:"redis"`
-	KafkaConfig KafkaConfig `mapstructure:"kafka"`
-	// other configurations...
+	Server      ServerConfig `mapstructure:"server"`
+	LogConfig   LogConfig    `mapstructure:"log"`
+	MySQLConfig MySQLConfig  `mapstructure:"mysql"`
+	RedisConfig RedisConfig  `mapstructure:"redis"`
+	KafkaConfig KafkaConfig  `mapstructure:"kafka"`
+}
+
+type ServerConfig struct {
+	Port int    `mapstructure:"port"`
+	Mode string `mapstructure:"mode"`
 }
 
 // RedisConfig represents the configuration settings for Redis

@@ -97,3 +97,124 @@ Ecommerce backbone API - using Go
     docker network inspect docker network inspect nginx-mysql-network
 ## Port
     sudo lsof -i :8080
+
+
+## Test Router
+
+Here are the updated `curl` commands with the port changed to `8999`:
+
+### User Routes
+
+#### 1. **Register a New User**
+
+
+curl -X POST http://localhost:8999/v1/2024/user/register \
+     -H "Content-Type: application/json" \
+     -d '{"username": "newuser", "password": "password123", "email": "newuser@example.com"}'
+
+
+#### 2. **Send OTP to User**
+
+
+curl -X POST http://localhost:8999/v1/2024/user/send_otp \
+     -H "Content-Type: application/json" \
+     -d '{"phone": "+1234567890"}'
+
+
+#### 3. **Get User Information**
+
+
+curl -X GET http://localhost:8999/v1/2024/user/get_info \
+     -H "Authorization: Bearer <your_token_here>"
+
+
+
+
+### Admin Routes
+
+#### 1. **Admin Login**
+
+
+curl -X POST http://localhost:8999/v1/2024/admin/login \
+     -H "Content-Type: application/json" \
+     -d '{"username": "admin", "password": "admin123"}'
+
+
+#### 2. **Activate User (Admin Action)**
+
+
+curl -X POST http://localhost:8999/v1/2024/admin/active_user/123 \
+     -H "Authorization: Bearer <admin_token_here>"
+
+
+#### 3. **Add Shop (Admin Action)**
+
+
+curl -X POST http://localhost:8999/v1/2024/admin/add_shop \
+     -H "Authorization: Bearer <admin_token_here>" \
+     -H "Content-Type: application/json" \
+     -d '{"shop_name": "New Shop", "owner": "owner_id"}'
+
+
+
+
+### Admin Managing Users
+
+#### 1. **Update User Information (Admin Action)**
+
+
+curl -X PUT http://localhost:8999/v1/2024/admin/user/update/123 \
+     -H "Authorization: Bearer <admin_token_here>" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "updatedemail@example.com", "status": "active"}'
+
+
+#### 2. **Deactivate a User (Admin Action)**
+
+
+curl -X POST http://localhost:8999/v1/2024/admin/user/deactivate/123 \
+     -H "Authorization: Bearer <admin_token_here>"
+
+
+#### 3. **Delete a User (Admin Action)**
+
+
+curl -X DELETE http://localhost:8999/v1/2024/admin/user/delete/123 \
+     -H "Authorization: Bearer <admin_token_here>"
+
+
+
+
+### Product Routes (Optional)
+
+#### 1. **Add a Product**
+
+
+curl -X POST http://localhost:8999/v1/2024/product/add \
+     -H "Authorization: Bearer <admin_token_here>" \
+     -H "Content-Type: application/json" \
+     -d '{"product_name": "New Product", "price": 100}'
+
+
+#### 2. **Get Product List**
+
+
+curl -X GET http://localhost:8999/v1/2024/product/list \
+     -H "Authorization: Bearer <admin_token_here>"
+
+
+
+
+### Check Server Status (For Monitoring)
+
+
+curl -X GET http://localhost:8999/v1/2024/checkStatus
+
+
+
+
+### Summary:
+All `curl` commands are now updated to use port `8999`. You can run these commands to test your API with the new port configuration.
+
+Let me know if you need further modifications or assistance!
+

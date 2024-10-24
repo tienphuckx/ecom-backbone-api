@@ -50,3 +50,7 @@
 {"level":"info","timestamp":"2024-10-24T15:20:36.610097812+07:00","message":"Shutting down server..."}
 {"level":"info","timestamp":"2024-10-24T15:20:36.610824917+07:00","message":"Redis connection closed gracefully"}
 {"level":"info","timestamp":"2024-10-24T15:20:36.611134+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T16:21:15.002863964+07:00","message":"Migration completed successfully!"}
+{"level":"info","timestamp":"2024-10-24T16:21:15.003000205+07:00","message":"MySQL successfully connected and migrated","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T16:21:15.003592728+07:00","message":"Redis connected successfully","pong":"PONG"}
+{"level":"info","timestamp":"2024-10-24T16:21:15.003638273+07:00","message":"Server is starting..."}
