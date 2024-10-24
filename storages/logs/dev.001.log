@@ -19,3 +19,14 @@
 {"level":"info","timestamp":"2024-10-24T13:07:22.818994525+07:00","message":"Server exited successfully"}
 {"level":"info","timestamp":"2024-10-24T13:07:25.166698633+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
 {"level":"info","timestamp":"2024-10-24T13:07:25.166825161+07:00","message":"Server is starting..."}
+{"level":"info","timestamp":"2024-10-24T13:13:22.693148794+07:00","message":"Shutting down server..."}
+{"level":"info","timestamp":"2024-10-24T13:13:22.693782714+07:00","message":"MySQL connection closed successfully"}
+{"level":"info","timestamp":"2024-10-24T13:13:22.694147029+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T13:23:59.157765001+07:00","message":"MySQL successfully connected","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T13:23:59.157889533+07:00","message":"Server is starting..."}
+{"level":"info","timestamp":"2024-10-24T13:27:00.542969669+07:00","message":"Shutting down server..."}
+{"level":"info","timestamp":"2024-10-24T13:27:00.543278875+07:00","message":"MySQL connection closed successfully"}
+{"level":"info","timestamp":"2024-10-24T13:27:00.543678083+07:00","message":"Server exited successfully"}
+{"level":"info","timestamp":"2024-10-24T13:54:41.950619788+07:00","message":"Migration completed successfully!"}
+{"level":"info","timestamp":"2024-10-24T13:54:41.950922409+07:00","message":"MySQL successfully connected and migrated","host":"127.0.0.1"}
+{"level":"info","timestamp":"2024-10-24T13:54:41.950940279+07:00","message":"Server is starting..."}
