@@ -62,16 +62,21 @@ Ecommerce backbone API - using Go
         go tool cover -html=coverage.out -o coverage.html
 
 
-# Test
-curl -H "Authorization: valid-token" curl http://localhost:8080/user/email/phuc@gmail.com
-curl http://localhost:8080/user/email/phuc@gmail.com
-mysql -h 127.0.0.1 -P 3306 -u root -p --protocol=tcp
-GRANT ALL PRIVILEGES ON *.* TO 'phuc'@'%' IDENTIFIED BY '123456';
-FLUSH PRIVILEGES;
+# TESTING
 
-## cmd
+## API
+    curl -H "Authorization: valid-token" curl http://localhost:8080/user/email/phuc@gmail.com
+    curl http://localhost:8080/user/email/phuc@gmail.com
+
+## MySQL
+    mysql -h 127.0.0.1 -P 3306 -u root -p --protocol=tcp
+    GRANT ALL PRIVILEGES ON *.* TO 'phuc'@'%' IDENTIFIED BY '123456';
+    FLUSH PRIVILEGES;
     docker exec -it mysql-db bash
     mysql -uroot -p123456
     use boxfetch;
     show tables;
     desc go_db_user;
+
+## Benchmark
+    go test -bench=. -benchmem
