@@ -65,6 +65,10 @@ Ecommerce backbone API - using Go
 
 
 # TESTING
+    go test ./test/redis/ -v
+    go test ./test/basic/ -v
+    go test ./test/<other>/ -v
+
 
 ## API
     curl -H "Authorization: valid-token" curl http://localhost:8080/user/email/phuc@gmail.com
